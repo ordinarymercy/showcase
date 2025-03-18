@@ -1,4 +1,10 @@
 /* Navbar container */
+
+body{
+  margin: 4rem auto 0;
+  font-family: "Roboto", sans-serif;
+}
+
 .navbar {
   overflow: hidden;
   background-color: #333;
