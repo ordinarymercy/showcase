@@ -6,12 +6,14 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
 <link rel="stylesheet" href="../navbar.css">
 <link rel="stylesheet" href="../index.css">
+<link rel="stylesheet" href="../style.css">
+<script defer src="../myscripts.js"></script>
 <title>Susan Lutz Color Themes</title>
 </head>
 
 
 
-<!--Navbar-->
+<!--Navbar---------------------------------------------------------------------------------------------------------------->
 <ul class="nav">
   <li><a href="../index.html">Home</a></li>
   <li><a href="../resume/resume.html">Resume</a></li>
@@ -38,59 +40,68 @@
     <a href="../typography/font-types.html">Typography Fonts</a>
     <a href="../typography/typography-comparison.html">Typography Comparison</a>
   </div>
+  <li class="dropdown">
+    <a href="#" class="dropbtn">Settings</a>
+  <div class="dropdown-content">
+    <!--<a href="onclick="myFunction()">Dark Mode / Light Mode</a>-->
+    <a href="#" onclick="darkMode();">Toggle Light / Dark Mode</a>  
+    <a href="#" onclick="changeSizeByBtn('50%');">Small Font</a>
+    <a href="#" onclick="changeSizeByBtn('60%');">Medium Font</a>
+    <a href="#" onclick="changeSizeByBtn('70%');">Large Font</a>
+  </div>
 </ul>
 
-  <!--main layout-->
+<!--Main Content Upper Container------------------------------------------------------------------------------------------------->
  <main class="container">
     <div class="box"><img style="display:block;margin:0 auto;" src="../photo-of-me-1.png" alt="Photo of Me"><br></div>
     <div class="box">
-      <h1>Color Themes</h1>
+      <h5 class="fontSizeClass">Color Themes</h5>
       <br>
-      <p>Color themes are an important tool for any web designer.  Early in the process, I will nail consult the client
-        in an effort to nail down a color theme in order to create a cohesive feel for the entire website.  This Theme
-        will be an evocative tool in my toolbox, and is crucial.  Below, I have chosen a few possible color themes
-        and explained what they might be used for.  I hope you enjoy!  Should you have any questions 
+      <p class="fontSizeClass"> Color themes are an important tool for any web designer.  Early in the process, I will consult    the client in an effort to nail down a color theme in order to create a cohesive feel for the entire website.  This Theme
+      will be an evocative tool in my toolbox, and is crucial.  Below, I have chosen a few possible color themes
+      and explained what they might be used for.  I hope you enjoy!  Should you have any questions 
       or comments, please feel free to reach out to me at suelutz@gmail.com.</p>
     </div>
-    <div class="box">
-      <h3>Monochromatic Color Theme</h3>
+
+<!--Color Themes Lower Container------------------------------------------------------------------------------------------------->
+  <div class="box">
+      <h3 class="fontSizeClass">Monochromatic Color Theme</h3>
       <p><img src="color-theme-monochromatic.png" alt="Blue Color Theme"></p>
-      <p>This monochromatic, conservative color scheme might appeal to the upper-class. 
+      <p class="fontSizeClass">This monochromatic, conservative color scheme might appeal to the upper-class. 
         The blue is not only conservative in its connotation, but also is reminiscent of water and aquatics. 
         I think this is a good choice for a yacht club.</p>
-      <br>
-      <hr>
+    <br>
+    <hr>
 
-      <h3>Split Color Theme</h3>
-      <p><img src="color-theme-split.png" alt="Split Color Theme"></p>
-      <p>This split design appealed to me since it incorporates 2 of my favorite hues. I think as a 
-        web designer I would opt for small amounts of bold color choices, and this theme reflects that.</p>
-      <br>
-      <hr>
+    <h3 class="fontSizeClass">Split Color Theme</h3>
+    <p><img src="color-theme-split.png" alt="Split Color Theme"></p>
+    <p class="fontSizeClass">This split design appealed to me since it incorporates 2 of my favorite hues. I think as a 
+      web designer I would opt for small amounts of bold color choices, and this theme reflects that.</p>
+    <br>
+    <hr>
 
-      <h3>Baby Nursery Designer Color Theme</h3>
-      <p><img src="color-theme-pastel.png" alt="Pastel Color Theme"></p>
-      <p>When I think of pastels, I think of babies. These hues evoke thoughts of cribs and mobiles, and I 
-        think they would be a good choice for a website of a baby nursery designer.</p>
-      <br>
-      <hr>
+    <h3 class="fontSizeClass">Baby Nursery Designer Color Theme</h3>
+    <p><img src="color-theme-pastel.png" alt="Pastel Color Theme"></p>
+    <p class="fontSizeClass">When I think of pastels, I think of babies. These hues evoke thoughts of cribs and mobiles, and I 
+      think they would be a good choice for a website of a baby nursery designer.</p>
+    <br>
+    <hr>
 
-      <h3>Analogous Color Theme</h3>
-      <p><img src="color-theme-analogous.png" alt="Analogous Color Theme"></p>
-      <p>The vibrant tones in this theme make me think of toy stores. The first 3 colors are analogous. 
-        This theme combines pinks for girls with reds and oranges for boys, with vibrant, exciting colors 
-        for all kids.</p>
-      <br>
-      <hr>
+    <h3 class="fontSizeClass">Analogous Color Theme</h3>
+    <p><img src="color-theme-analogous.png" alt="Analogous Color Theme"></p>
+    <p class="fontSizeClass">The vibrant tones in this theme make me think of toy stores. The first 3 colors are analogous. 
+      This theme combines pinks for girls with reds and oranges for boys, with vibrant, exciting colors 
+      for all kids.</p>
+    <br>
+    <hr>
 
-      <h3>Hipster Color Theme</h3>
-      <p><img src="color-theme-hipster.png" alt="Hipster Color Theme"></p>
-      <p>The warm, earthy tones that are reminiscent of home decor of the 1970's, remind me of "hipsters." 
-        This theme would appeal to bearded men and chicks with tattoos and body piercings. I think a record store
-         would be a good client for this color theme.</p>
-      <br>
-      <hr>
-
-
-    </div>
-  </main>
+    <h3 class="fontSizeClass">Hipster Color Theme</h3>
+    <p><img src="color-theme-hipster.png" alt="Hipster Color Theme"></p>
+    <p class="fontSizeClass">The warm, earthy tones that are reminiscent of home decor of the 1970's, remind me of "hipsters." 
+      This theme would appeal to bearded men and chicks with tattoos and body piercings. I think a record store
+        would be a good client for this color theme.</p>
+    <br>
+    <hr>
+  </div>
+</main>
+</html>

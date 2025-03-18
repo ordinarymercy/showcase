@@ -6,12 +6,11 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
 <link rel="stylesheet" href="../navbar.css">
 <link rel="stylesheet" href="../style.css">
+<script defer src="../myscripts.js"></script>
 <title>Susan Lutz Web Banner Project</title>
 </head>
 
-
-
-<!--Navbar-->
+<!--Navbar----------------------------------------------------------------------------------------------------------------->
 <ul class="nav">
   <li><a href="../index.html">Home</a></li>
   <li><a href="../resume/resume.html">Resume</a></li>
@@ -38,23 +37,40 @@
     <a href="../typography/font-types.html">Typography Fonts</a>
     <a href="../typography/typography-comparison.html">Typography Comparison</a>
   </div>
+  <li class="dropdown">
+    <a href="#" class="dropbtn">Settings</a>
+  <div class="dropdown-content">
+    <a href="/typography/typography-overview.html">Dark Mode</a>
+    <a href="/typography/font-types.html">Light Mode</a>
+    <a href="/typography/typography-comparison.html">Small Font</a>
+    <a href="/typography/typography-comparison.html">Medium Font</a>
+    <a href="/typography/typography-comparison.html">Large Font</a>
+  </div>
+  <li class="dropdown">
+    <a href="#" class="dropbtn">Settings</a>
+  <div class="dropdown-content">
+    <!--<a href="onclick="myFunction()">Dark Mode / Light Mode</a>-->
+    <a href="#" onclick="darkMode();">Toggle Light / Dark Mode</a>  
+    <a href="#" onclick="changeSizeByBtn('50%');">Small Font</a>
+    <a href="#" onclick="changeSizeByBtn('60%');">Medium Font</a>
+    <a href="#" onclick="changeSizeByBtn('70%');">Large Font</a>
+  </div>
 </ul>
 
-  <!--main layout-->
-
- <main class="container">
-  <div class="box"><img style="display:block;margin:0 auto;" src="../photo-of-me-1.png" alt="Photo of Me"></div>
-    <div class="box">
-      <h1>Animate - Web Banner Project</h1>
-      <br>
-      <p>The purpose of this project is to use my existing static “Lucky Lizard Web Design” logo, and add a tongue
-        that sticks out, grabs a fly, and then retracts. The animated gif shown here does not support some features
-        that work in Adobe Animate. For example, in Animate, when you click the banner it brings you to my other 
-        website, which was built with Wix. Additionally, upon mouseover the logo changes color and then reverts 
-        back upon mouseout. I have included my Adobe Animate file here so that you can see those features if you
-         have Animate. I was careful to use a naming convention that would make sense to myself and others.
-         <a href="banner.fla">Click here to download the Animate file.</a></p>
-        <img src="banner.gif" alt="Web Banner">
-
-    </div>
-  </main>
+<!--Main Layout----------------------------------------------------------------------------------------------------------------->
+  <body>
+    <main class="container">
+      <div class="box"><img style="display:block;margin:0 auto;" src="../photo-of-me-1.png" alt="Photo of Me"></div>
+        <div class="box">
+          <h5 class="fontSizeClass">Animate - Web Banner Project</h5>
+            <br>
+              <p class="fontSizeClass">The purpose of this project is to use my existing static “Lucky Lizard Web Design” logo,  and add a tongue that sticks out, grabs a fly, and then retracts. The animated gif shown here does not support some features that work in Adobe Animate. For example, in Animate, when you click the banner it brings you to my other 
+              website, which was built with Wix. Additionally, upon mouseover the logo changes color and then reverts 
+              back upon mouseout. I have included my Adobe Animate file here so that you can see those features if you
+              have Animate. I was careful to use a naming convention that would make sense to myself and others.
+              <a href="banner.fla">Click here to download the Animate file.</a></p>
+              <img src="banner.gif" alt="Web Banner">
+        </div>
+    </main>
+  </body>
+</html>

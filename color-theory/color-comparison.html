@@ -6,12 +6,12 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
 <link rel="stylesheet" href="../navbar.css">
 <link rel="stylesheet" href="../index.css">
+<link rel="stylesheet" href="../style.css">
+<script defer src="../myscripts.js"></script>
 <title>Susan Lutz Color Comparison</title>
 </head>
 
-
-
-<!--Navbar-->
+<!--Navbar---------------------------------------------------------------------------------------------------------------->
 <ul class="nav">
   <li><a href="../index.html">Home</a></li>
   <li><a href="../resume/resume.html">Resume</a></li>
@@ -38,25 +38,36 @@
     <a href="..typography/font-types.html">Typography Fonts</a>
     <a href="../typography/typography-comparison.html">Typography Comparison</a>
   </div>
+  <li class="dropdown">
+    <a href="#" class="dropbtn">Settings</a>
+  <div class="dropdown-content">
+    <!--<a href="onclick="myFunction()">Dark Mode / Light Mode</a>-->
+    <a href="#" onclick="darkMode();">Toggle Light / Dark Mode</a>  
+    <a href="#" onclick="changeSizeByBtn('50%');">Small Font</a>
+    <a href="#" onclick="changeSizeByBtn('60%');">Medium Font</a>
+    <a href="#" onclick="changeSizeByBtn('70%');">Large Font</a>
+  </div>
 </ul>
 
-  <!--main layout-->
+<!--Main Content Upper Container------------------------------------------------------------------------------------------------->
  <main class="container">
     <div class="box"><img style="display:block;margin:0 auto;" src="../photo-of-me-1.png" alt="Photo of Me"><br></div>
     <div class="box">
-      <h1>Comparing Colors Between 2 Websites</h1>
+      <h5 class="fontSizeClass">Comparing Colors Between 2 Websites</h5>
       <br>
-      <p>There are several key components that contribute to effective web design, such as navigation, whitespace, 
-        SEO, content, typography, and more. In this article, we will explore the use of color in two websites, and 
+      <p class="fontSizeClass">There are several key components that contribute to effective web design, such as vigation,        
+        whitespace, SEO, content, typography, and more. In this article, we will explore the use of color in two websites, and 
         compare them. The first website is for <a href="https://www.mailchimp.com">Mailchimp</a>, a popular email marketing tool, 
         and the other is for <a href="https://www.stardustsalon.com">Stardust Salon</a> in New Orleans. Please allow me to 
         take you on a journey in terms of how color can make quite an impact 
         on the audience’s mood!</p>
     </div>
+
+<!--Main Content Lower Container------------------------------------------------------------------------------------------------->
     <div class="box">
-      <h3>Mailchimp</h3>
+      <h3 class="fontSizeClass">Mailchimp</h3>
       <p><img src="01-mailchimp-landing-page.jpg" alt="Mailchimp Landing Page"></p>
-      <p>We will begin with Mailchimp. The screenshot shown above is what you'll see on its landing page, which is located at 
+      <p class="fontSizeClass">We will begin with Mailchimp. The screenshot shown above is what you'll see on its landing page, which is located at 
         www.mailchimp.com  Notice the use of bright, cheery yellow on its “Sign Up” buttons. This draws the audience’s eye to them, in an 
         effort to drive a conversion. A conversion is just the goal of a website. It could be a sale, a sign-up for a 
         newsletter, or a trial period for software. In this case it is the latter. Yellow and gray go nicely together, and
@@ -64,39 +75,41 @@
       <br>
       <hr>
 
-      <h3>Following is a screenshot of what you’ll see when you log in to Mailchimp:</h3>
+      <h3 class="fontSizeClass">Following is a screenshot of what you’ll see when you log in to Mailchimp:</h3>
       <p><img src="02-mailchimp-internal-page.jpg" alt="Mailchimp Internal Page"></p>
-      <p>Once again, yellow is used effectively. The yellow bar at the top sets the mood – cheery. 
+      <p class="fontSizeClass">Once again, yellow is used effectively. The yellow bar at the top sets the mood – cheery. 
         The use of yellow below draws your eye. And of course, the use of whitespace is stellar.</p>
       <br>
       <hr>
 
-      <h3>Mailchimp's landing page on a phone: </h3>
+      <h3 class="fontSizeClass">Mailchimp's landing page on a phone: </h3>
       <p><img src="03-mailchimp-phone-page.png" alt="Mailchimp Phone Page"></p>
-      <p>Next, let’s check out the Mailchimp landing page on a phone. Notice that “Start Free Trial” is
+      <p class="fontSizeClass">Next, let’s check out the Mailchimp landing page on a phone. Notice that “Start Free Trial” is
         in yellow, and to underline “free.” The overall effect is pleasant, and slightly irreverent, while 
         the text emphasizes Mailchimp’s expertise.</p>
       <br>
       <hr>
 
-      <h3>Mailchimp's footer:</h3>
+      <h3 class="fontSizeClass">Mailchimp's footer:</h3>
       <p><img src="04-mailchimp-footer.png" alt="Mailchimp Footer"></p>
-      <p>The vibrant tones in this theme make me think of toy stores. The first 3 colors are analogous. 
+      <p class="fontSizeClass">The vibrant tones in this theme make me think of toy stores. The first 3 colors are analogous. 
         This theme combines pinks for girls with reds and oranges for boys, with vibrant, exciting colors 
         for all kids.</p>
       <br>
       <hr>
 
-      <h3>Stardust Salon</h3>
+      <h3 class="fontSizeClass">Stardust Salon</h3>
       <p><img src="stardust-home-page.png" alt="Stardust Salon Home Page"></p>
-      <p>I find the use of dark colors to be depressing and gloomy. I suspect they were going for sophisticated, but, 
+      <p class="fontSizeClass">I find the use of dark colors to be depressing and gloomy. I suspect they were going for sophisticated, but, 
         in my opinion, it desperately needs a pop of color. Just adding some colored text to the navigation bar would 
         do wonders for this website. As you explore the site, thankfully there is more white on some of the pages, but 
-        the overall effect is still gray and black. The site seems boring and somewhat amateurish.
-<br>
-        I think it is clear that even a small amount of color can have a huge positive impact on a website. Don't be 
-        afraid to explore the use of color in your website! Thank you for reading!        </p>
+        the overall effect is still gray and black. The site seems boring and somewhat amateurish.</p>
+      <br>
+        <p>I think it is clear that even a small amount of color can have a huge positive impact on a website. Don't be 
+        afraid to explore the use of color in your website! Thank you for reading!        
+      </p>
       <br>
       <hr>
     </div>
   </main>
+</html>

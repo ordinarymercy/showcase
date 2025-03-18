@@ -6,12 +6,11 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
 <link rel="stylesheet" href="../navbar.css">
 <link rel="stylesheet" href="../style.css">
+<script defer src="../myscripts.js"></script>
 <title>Susan Lutz Photo Restoration Project</title>
 </head>
 
-
-
-<!--Navbar-->
+<!--Navbar---------------------------------------------------------------------------------------------------------------->
 <ul class="nav">
   <li><a href="../index.html">Home</a></li>
   <li><a href="../resume/resume.html">Resume</a></li>
@@ -38,27 +37,36 @@
     <a href="../typography/font-types.html">Typography Fonts</a>
     <a href="../typography/typography-comparison.html">Typography Comparison</a>
   </div>
+  <li class="dropdown">
+    <a href="#" class="dropbtn">Settings</a>
+  <div class="dropdown-content">
+    <!--<a href="onclick="myFunction()">Dark Mode / Light Mode</a>-->
+    <a href="#" onclick="darkMode();">Toggle Light / Dark Mode</a>  
+    <a href="#" onclick="changeSizeByBtn('50%');">Small Font</a>
+    <a href="#" onclick="changeSizeByBtn('60%');">Medium Font</a>
+    <a href="#" onclick="changeSizeByBtn('70%');">Large Font</a>
+  </div>
 </ul>
 
-  <!--main layout-->
+<!--Main Content---------------------------------------------------------------------------------------------------------------->
  <main class="container">
     <div class="box"><img style="display:block;margin:0 auto;" src="../photo-of-me-1.png" alt="Photo of Me"></div>
-    <div class="box">
-      <h1>Photoshop - Photo Restoration</h1>
-      <br>
-      <p>
-      This was my favorite project. The goal of this project was to restore an old, creased black and white photograph. 
-      I subscribed to Adobe Stock and discovered two images to use: one for the background and the other as the
-       damaged photograph itself. Initially, I created a working copy of the photograph on a new layer to preserve the
-        original. I then cropped it to correct its skew and eliminate the damaged edges. Using the spot healing brush, 
-        I removed most of the creases, and for the textured creases on the boy's shirt, I employed the healing brush tool.
-         Next, I applied the neural filter "colorize," which required me to revisit and adjust some of my previous tweaks.
-          I experimented with adjustment layers, focusing on curves and hue/saturation. To finish, I incorporated the background image to
-           enhance the overall professionalism of the restoration.
-        </p></div>
+      <div class="box">
+        <h5 class="fontSizeClass">Photoshop - Photo Restoration</h5>
+        <br>
+        <p class="fontSizeClass">
+          This was my favorite project. The goal of this project was to restore an old, creased black and white photograph. 
+          I subscribed to Adobe Stock and discovered two images to use: one for the background and the other as the
+          damaged photograph itself. Initially, I created a working copy of the photograph on a new layer to preserve the
+          original. I then cropped it to correct its skew and eliminate the damaged edges. Using the spot healing brush, 
+          I removed most of the creases, and for the textured creases on the boy's shirt, I employed the healing brush tool.
+          Next, I applied the neural filter "colorize," which required me to revisit and adjust some of my previous tweaks.
+          I experimented with adjustment layers, focusing on curves and hue/saturation. To finish, I incorporated the background image to enhance the overall professionalism of the restoration.
+        </p>
+      </div>
     <div class = "restoration-container-box">
       <div class="before"><img src="restoration-before.jpg" alt="Restoration Before" style="width:300px;height:400px;"></div>
-     <div class="after"><img src="restoration-after.png" alt="Restoration After" style="width:300px;height:400px;"></div>
+      <div class="after"><img src="restoration-after.png" alt="Restoration After" style="width:300px;height:400px;"></div>
     </div>
-
-    </main>
+</main>
+</html>

@@ -6,12 +6,11 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
 <link rel="stylesheet" href="../navbar.css">
 <link rel="stylesheet" href="../style.css">
+<script defer src="../myscripts.js"></script>
 <title>Susan Lutz Color Theory Overview</title>
 </head>
 
-
-
-<!--Navbar-->
+<!--Navbar---------------------------------------------------------------------------------------------------------------->
 <ul class="nav">
   <li><a href="../index.html">Home</a></li>
   <li><a href="../resume/resume.html">Resume</a></li>
@@ -38,127 +37,186 @@
     <a href="../typography/font-types.html">Typography Fonts</a>
     <a href="../typography/typography-comparison.html">Typography Comparison</a>
   </div>
+  <li class="dropdown">
+    <a href="#" class="dropbtn">Settings</a>
+  <div class="dropdown-content">
+    <a href="/typography/typography-overview.html">Dark Mode</a>
+    <a href="/typography/font-types.html">Light Mode</a>
+    <a href="/typography/typography-comparison.html">Small Font</a>
+    <a href="/typography/typography-comparison.html">Medium Font</a>
+    <a href="/typography/typography-comparison.html">Large Font</a>
+  </div>  
+  <li class="dropdown">
+    <a href="#" class="dropbtn">Settings</a>
+  <div class="dropdown-content">
+    <!--<a href="onclick="myFunction()">Dark Mode / Light Mode</a>-->
+    <a href="#" onclick="darkMode();">Toggle Light / Dark Mode</a>  
+    <a href="#" onclick="changeSizeByBtn('50%');">Small Font</a>
+    <a href="#" onclick="changeSizeByBtn('60%');">Medium Font</a>
+    <a href="#" onclick="changeSizeByBtn('70%');">Large Font</a>
+  </div>
 </ul>
 
-  <!--main layout-->
+<!--Main Content---------------------------------------------------------------------------------------------------------------->
  <main class="container">
   <div class="box"><img style="display:block;margin:0 auto;" src="../photo-of-me-1.png" alt="Photo of Me"></div>
     <div class="box">
-      <h1>Color Theory Overview</h1>
-      <p>Color theory explores the interplay of colors and their impact on people's emotions and perceptions. 
-        It serves as a valuable resource for artists, designers, and creators to select colors that effectively
+      <h5 class="fontSizeClass">Color Theory Overview</h5>
+        <p class="fontSizeClass">Color theory explores the interplay of colors and their impact on people's emotions and perceptions. It serves as a valuable resource for artists, designers, and creators to select colors that effectively
         communicate the desired mood or message in their creations. It is impossible to discuss color theory
         without first becoming familiar with the color wheel, like the one shown below.
-        </p></div>
-     <div class="box"><img src="color-wheel.png" alt="Color Wheel">
-     <p><a href="https://www.wordlayouts.com/template/detailed-color-wheel-chart-template/#google_vignette">Free download from this site.</a></p>
-    <br>
-    <p>Let’s move on to defining various terms that are used in color theory.</p></div>
-
-     <div class="color-box">
-        <div class="color-terms">
-          <p>Primary Color:</p>
-          <p>A primary color is a fundamental hue that cannot be produced by blending other colors.
-            The primary colors are red, yellow, and blue. This means that all other colors can be created by mixing
-             various combinations of these three essential colors.</p>
-          <p>Secondary Color:</p>
-          <p>A secondary color is formed by blending two primary colors in equal proportions. The secondary
-            colors include orange (created from red and yellow), green (derived from blue and yellow), 
-            and purple (resulting from red and blue).</p>            
-          <p>Tertiary Color:</p>
-          <p>A tertiary color is created by blending equal amounts of a primary color with a neighboring secondary
-            color on the color wheel. The six tertiary colors are:
-            * Red-orange: A mix of red and orange<br>
-            * Yellow-orange: A mix of yellow and orange<br>
-            * Yellow-green: A mix of yellow and green<br>
-            * Blue-green: A mix of blue and green<br>
-            * Blue-violet: A mix of blue and violet<br>
-            * Red-violet: A mix of red and violet<br>
-            </p>
-            <p>Saturation:</p>
-            <p>This describes the intensity or purity of a color, reflecting its vividness and brightness. A color
-               with high saturation appears bright and rich, whereas a desaturated color appears muted and more grayish.
-                Saturation is one of the three main components of color, along with hue (the actual color itself) and
-                value (lightness or darkness).</p>
-            <p>Hue:</p>
-            <p>The color family or the fundamental base color of a shade. It is the color that we recognize and name, 
-              such as red, green, blue, or purple. Hue is one of the primary characteristics of color, alongside 
-              saturation and value.</p>
-            <p>Value:</p>
-            <p>The lightness or darkness of a color, essentially measuring it on a scale from pure white (highest value) 
-              to pure black (lowest value). This element is crucial in understanding how a color interacts with others
-              within a composition. While "hue" pertains to the color itself (such as red, blue, or green) and 
-              "saturation" describes its intensity, "value" specifically centers on the degree of lightness or darkness.</p>
-            <p>Shade:</p>
-            <p>A color formed by adding black to a pure hue, which darkens the original color and results in a deeper 
-              version. This technique allows for adjusting the value of a color, giving it a more shadowed or rich appearance.</p>
-            <p>Tint:</p>
-            <p>Refers to a lighter variation of a color that is achieved by adding white to a pure hue. This process 
-              effectively decreases the saturation, resulting in a paler or more pastel appearance. A tint is created 
-              by mixing only white with a color, without incorporating any black or gray.</p>
-            <p>Tone:</p>
-            <p>Refers to a color produced by mixing a neutral gray with a hue, or by blending pure colors together.</p>
-            <p>Neutral Color:</p>
-            <p>Describes a hue that is low in saturation and lacks a strong hue, resulting in a muted appearance 
-              without a clear color identity. This category typically encompasses shades of white, black, gray, 
-              beige, and brown—colors that are not found on the color wheel. Their subdued nature allows them to blend
-              seamlessly with other colors without creating visual discord.</p>
-            <p>Warm Colors:</p>
-            <p>Hues that evoke a sense of warmth, usually encompassing shades of red, orange, and yellow. These colors
-             are often linked to the sun, fire, and heat, representing those on the "red-orange" side of the color wheel. 
-             They typically appear to advance in a composition, instilling a feeling of energy or excitement.</p>
-             <p>Cool Colors:</p>
-             <p>Denotes hues linked to coolness, typically encompassing shades of blue, green, and purple. These colors 
-              often inspire feelings of calmness and serenity, appearing to recede into the background. Essentially, 
-              any color with a substantial amount of blue is classified as cool.</p>
-            <p>Monochromatic Colors:</p>
-            <p>A color scheme that consists of different shades and tints of a single hue. Any color can be used to
-               establish a monochromatic palette. For instance, by adding white to red, you obtain pink, while adding
-                black results in maroon. Consequently, a monochromatic color scheme could include pink, red, and maroon.</p>
-            <p>Color Scheme:</p>
-            <p>A deliberate combination of two or more colors that are used together in design. These colors are 
-              typically selected based on their relationships on the color wheel to achieve a visually appealing 
-              aesthetic or to evoke a specific mood. Essentially, it's a carefully curated palette of colors that
-              harmonize beautifully.</p>
-            <p>CMYK:</p>
-            <p>CMYK stands for Cyan, Magenta, Yellow, and Key (black), representing the four essential
-             colors employed in the printing process. CMYK is both a color model and a printing technique that utilizes 
-             these four colors to produce a diverse spectrum of colors in printed materials.</p>
-             <p>RGB:</p>
-             <p>"RGB" refers to "Red, Green, Blue," which are the three primary colors of light. When these colors 
-              are mixed in different intensities, they can produce any visible color on a screen. This additive color 
-              model means that increasing the amount of light results in brighter colors, and it is mainly utilized 
-              for digital displays such as computer monitors and televisions.</p>
-              <p>Hexadecimal Color Code: </p>
-              <p>A hexadecimal color code, commonly referred to as a "hex code," is a six-digit alphanumeric 
-                string that represents a specific color on digital displays. Each pair of digits indicates the 
-                intensity of the red, green, and blue (RGB) components in that color, enabling precise color 
-                specification for design and coding tasks, such as web development. It begins with a hash symbol (#)
-                 and consists of numbers ranging from 0-9 and letters A-F.</p>
-              <p>Triadic Colors: </p>
-              <p>Triadic colors consist of three hues that are evenly distributed around the color wheel, forming 
-                a triangle. They are popular because they create balance, add visual interest, and convey energy. 
-                When using a triadic color scheme, designers frequently select one dominant color alongside two 
-                supporting colors. The dominant hue is chosen to reflect a company's brand identity; for instance, 
-                green may symbolize growth and abundance. The supporting colors are selected to complement the main color. 
-                To achieve a more cohesive blend, the saturation of the supporting colors can be adjusted. Opting for 
-                pastel variations can lend a calming effect to the scheme, while bold, saturated colors can create a more 
-                dramatic impact</p>
-              <p>Complementary Colors:</p>
-              <p>Pairs of hues that lie directly opposite each other on the color wheel. These colors create a 
-                striking contrast and amplify each other's brightness. Examples include blue and orange, red and green, 
-                and yellow and purple. They are effective for highlighting specific elements. However, it's advisable
-                 to avoid using these combinations for text and background, as they can hinder readability.</p>
-              <p>Split Colors:</p>
-              <p>A color scheme that incorporates a base color along with two colors that sit next to its complement 
-                on the color wheel. For instance, the complementary color of violet is yellow, making its split complementary
-                 colors yellow-green and yellow-orange. While split complementary color schemes can be visually striking, 
-                 they tend to be softer and more pleasing to the eye compared to traditional complementary schemes. 
-                 Additionally, they provide greater flexibility for balancing warm and cool tones.</p>
-                <p>Analogous Colors: </p>
-                <p>Analogous colors are those that sit next to each other on the color wheel and share a similar hue. 
-                  They are frequently utilized in design to achieve a harmonious and calming aesthetic.</p>
-         </div>
+        </p>
       </div>
-</main>
+     <div class="box"><img src="color-wheel.png" alt="Color Wheel">
+      <p class="fontSizeClass"><a href="https://www.wordlayouts.com/template/detailed-color-wheel-chart-template/#google_vignette">Free download from this site.</a>
+      </p>
+    <br>
+    <p class="fontSizeClass">Let’s move on to defining various terms that are used in color theory.</p>
+    <br>
+    <br>
+  
+  <!--Glossary---------------------------------------------------------------------------------------------------------------->
+    <b><p class="fontSizeClass">Primary Color:</p></b>
+    <p class="fontSizeClass">A primary color is a fundamental hue that cannot be produced by blending other colors.
+      The primary colors are red, yellow, and blue. This means that all other colors can be created by mixing
+       various combinations of these three essential colors.</p>
+    <br>
 
+    <b class="fontSizeClass"><p>Secondary Color:</p></b>
+    <p class="fontSizeClass">A secondary color is formed by blending two primary colors in equal proportions. The secondary
+      colors include orange (created from red and yellow), green (derived from blue and yellow), 
+      and purple (resulting from red and blue).</p>  
+    <br>
+
+    <b><p class="fontSizeClass">Tertiary Color:</p></b>
+    <p class="fontSizeClass">A tertiary color is created by blending equal amounts of a primary color with a neighboring secondary
+      color on the color wheel. The six tertiary colors are:
+      * Red-orange: A mix of red and orange<br>
+      * Yellow-orange: A mix of yellow and orange<br>
+      * Yellow-green: A mix of yellow and green<br>
+      * Blue-green: A mix of blue and green<br>
+      * Blue-violet: A mix of blue and violet<br>
+      * Red-violet: A mix of red and violet<br>
+      </p>
+      <br>
+
+     <b><p class="fontSizeClass">Saturation:</p></b>
+      <p class="fontSizeClass">This describes the intensity or purity of a color, reflecting its vividness and brightness. A color
+         with high saturation appears bright and rich, whereas a desaturated color appears muted and more grayish.
+          Saturation is one of the three main components of color, along with hue (the actual color itself) and
+          value (lightness or darkness).</p>
+      <br>
+
+      <b><p class="fontSizeClass">Hue:</p></b>
+      <p class="fontSizeClass">The color family or the fundamental base color of a shade. It is the color that we recognize and name, 
+        such as red, green, blue, or purple. Hue is one of the primary characteristics of color, alongside 
+        saturation and value.</p>
+      <br>
+
+      <b><p class="fontSizeClass">Value:</p></b>
+      <p class="fontSizeClass">The lightness or darkness of a color, essentially measuring it on a scale from pure white (highest value) 
+        to pure black (lowest value). This element is crucial in understanding how a color interacts with others
+        within a composition. While "hue" pertains to the color itself (such as red, blue, or green) and 
+        "saturation" describes its intensity, "value" specifically centers on the degree of lightness or darkness.</p>
+     <br> 
+
+      <b><p class="fontSizeClass">Shade:</p></b>
+      <p class="fontSizeClass">A color formed by adding black to a pure hue, which darkens the original color and results in a deeper 
+        version. This technique allows for adjusting the value of a color, giving it a more shadowed or rich appearance.</p>
+      <br>
+
+      <b><p class="fontSizeClass">Tint:</p></b>
+      <p class="fontSizeClass">Refers to a lighter variation of a color that is achieved by adding white to a pure hue. This process 
+        effectively decreases the saturation, resulting in a paler or more pastel appearance. A tint is created 
+        by mixing only white with a color, without incorporating any black or gray.</p>
+      <br>
+
+      <b><p class="fontSizeClass">Tone:</p></b>
+      <p class="fontSizeClass">Refers to a color produced by mixing a neutral gray with a hue, or by blending pure colors together.</p>
+      <br>
+
+      <b><p class="fontSizeClass">Neutral Color:</p></b>
+      <p class="fontSizeClass">Describes a hue that is low in saturation and lacks a strong hue, resulting in a muted appearance 
+        without a clear color identity. This category typically encompasses shades of white, black, gray, 
+        beige, and brown—colors that are not found on the color wheel. Their subdued nature allows them to blend
+        seamlessly with other colors without creating visual discord.</p>
+      <br>
+
+      <b><p class="fontSizeClass">Warm Colors:</p></b>
+      <p class="fontSizeClass">Hues that evoke a sense of warmth, usually encompassing shades of red, orange, and yellow. These colors
+       are often linked to the sun, fire, and heat, representing those on the "red-orange" side of the color wheel. 
+       They typically appear to advance in a composition, instilling a feeling of energy or excitement.</p>
+       <br>
+
+       <b><p class="fontSizeClass">Cool Colors:</p></b>
+       <p class="fontSizeClass">Denotes hues linked to coolness, typically encompassing shades of blue, green, and purple. These colors 
+        often inspire feelings of calmness and serenity, appearing to recede into the background. Essentially, 
+        any color with a substantial amount of blue is classified as cool.</p>
+      <br>
+
+      <b><p class="fontSizeClass">Monochromatic Colors:</p></b>
+      <p class="fontSizeClass">A color scheme that consists of different shades and tints of a single hue. Any color can be used to
+         establish a monochromatic palette. For instance, by adding white to red, you obtain pink, while adding
+          black results in maroon. Consequently, a monochromatic color scheme could include pink, red, and maroon.</p>
+      <br>
+
+      <b><p class="fontSizeClass">Color Scheme:</p></b>
+      <p class="fontSizeClass">A deliberate combination of two or more colors that are used together in design. These colors are 
+        typically selected based on their relationships on the color wheel to achieve a visually appealing 
+        aesthetic or to evoke a specific mood. Essentially, it's a carefully curated palette of colors that
+        harmonize beautifully.</p>
+      <br>
+
+      <b><p class="fontSizeClass">CMYK:</p></b>
+      <p class="fontSizeClass">CMYK stands for Cyan, Magenta, Yellow, and Key (black), representing the four essential
+       colors employed in the printing process. CMYK is both a color model and a printing technique that utilizes 
+       these four colors to produce a diverse spectrum of colors in printed materials.</p>
+       <br>
+
+      <b><p class="fontSizeClass">RGB:</p></b>
+       <p class="fontSizeClass">"RGB" refers to "Red, Green, Blue," which are the three primary colors of light. When these colors 
+        are mixed in different intensities, they can produce any visible color on a screen. This additive color 
+        model means that increasing the amount of light results in brighter colors, and it is mainly utilized 
+        for digital displays such as computer monitors and televisions.</p>
+        <br>
+
+      <b><p class="fontSizeClass">Hexadecimal Color Code: </p></b>
+        <p class="fontSizeClass">A hexadecimal color code, commonly referred to as a "hex code," is a six-digit alphanumeric 
+          string that represents a specific color on digital displays. Each pair of digits indicates the 
+          intensity of the red, green, and blue (RGB) components in that color, enabling precise color 
+          specification for design and coding tasks, such as web development. It begins with a hash symbol (#)
+           and consists of numbers ranging from 0-9 and letters A-F.</p>
+      <br>
+
+      <b><p class="fontSizeClass">Triadic Colors: </p></b>
+        <p class="fontSizeClass">Triadic colors consist of three hues that are evenly distributed around the color wheel, forming 
+          a triangle. They are popular because they create balance, add visual interest, and convey energy. 
+          When using a triadic color scheme, designers frequently select one dominant color alongside two 
+          supporting colors. The dominant hue is chosen to reflect a company's brand identity; for instance, 
+          green may symbolize growth and abundance. The supporting colors are selected to complement the main color. 
+          To achieve a more cohesive blend, the saturation of the supporting colors can be adjusted. Opting for 
+          pastel variations can lend a calming effect to the scheme, while bold, saturated colors can create a more 
+          dramatic impact</p>
+          <br>
+
+        <b><p class="fontSizeClass">Complementary Colors:</p></b>
+        <p class="fontSizeClass">Pairs of hues that lie directly opposite each other on the color wheel. These colors create a 
+          striking contrast and amplify each other's brightness. Examples include blue and orange, red and green, 
+          and yellow and purple. They are effective for highlighting specific elements. However, it's advisable
+           to avoid using these combinations for text and background, as they can hinder readability.</p>
+        <br>
+
+         <b><p class="fontSizeClass">Split Colors:</p></b>
+        <p class="fontSizeClass">A color scheme that incorporates a base color along with two colors that sit next to its complement 
+          on the color wheel. For instance, the complementary color of violet is yellow, making its split complementary
+           colors yellow-green and yellow-orange. While split complementary color schemes can be visually striking, 
+           they tend to be softer and more pleasing to the eye compared to traditional complementary schemes. 
+           Additionally, they provide greater flexibility for balancing warm and cool tones.</p>
+         <br>
+
+        <b><p class="fontSizeClass">Analogous Colors: </p></b>
+          <p class="fontSizeClass">Analogous colors are those that sit next to each other on the color wheel and share a similar hue. 
+            They are frequently utilized in design to achieve a harmonious and calming aesthetic.</p>
+   </div>
+</main>
+</html>

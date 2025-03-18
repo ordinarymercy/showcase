@@ -6,12 +6,11 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
 <link rel="stylesheet" href="../navbar.css">
 <link rel="stylesheet" href="../style.css">
+<script defer src="../myscripts.js"></script>
 <title>Susan Lutz Magazine Cover</title>
 </head>
 
-
-
-<!--Navbar-->
+<!--Navbar---------------------------------------------------------------------------------------------------------------->
 <ul class="nav">
   <li><a href="../index.html">Home</a></li>
   <li><a href="../resume/resume.html">Resume</a></li>
@@ -38,23 +37,33 @@
     <a href="../typography/font-types.html">Typography Fonts</a>
     <a href="../typography/typography-comparison.html">Typography Comparison</a>
   </div>
+  <li class="dropdown">
+    <a href="#" class="dropbtn">Settings</a>
+  <div class="dropdown-content">
+    <!--<a href="onclick="myFunction()">Dark Mode / Light Mode</a>-->
+    <a href="#" onclick="darkMode();">Toggle Light / Dark Mode</a>  
+    <a href="#" onclick="changeSizeByBtn('50%');">Small Font</a>
+    <a href="#" onclick="changeSizeByBtn('60%');">Medium Font</a>
+    <a href="#" onclick="changeSizeByBtn('70%');">Large Font</a>
+  </div>
 </ul>
 
-  <!--main layout-->
+<!--Main Content---------------------------------------------------------------------------------------------------------------->
  <main class="container">
   <div class="box"><img style="display:block;margin:0 auto;" src="../photo-of-me-1.png" alt="Photo of Me"></div>
     <div class="box">
-      <h1>Photoshop - Magazine Cover</h1>
+      <h5 class="fontSizeClass">Photoshop - Magazine Cover</h5>
       <br>
-      <p>	
+      <p class="fontSizeClass">	
         The purpose of the project was to design a fictional magazine cover featuring a made-up celebrity. 
         I was directed to use a photograph for which I had rights, so I opted for one of my own images. To begin, 
         I applied a mask to eliminate the background and substituted it with a radial gradient for the cover. 
         The hair proved to be quite challenging, and I'm not entirely satisfied with the result, but I put forth
-         my best effort. I drew inspiration from various real magazines to craft the headlines, incorporating embossing
-          and drop shadows to enhance the visual appeal. Additionally, I utilized the patch tool to cover my right
-           sleeve; where my skin was visible, I replaced it with purple shirt.  
-        </p>
-        <img src="magazine.png" alt="Magazine Cover">
+        my best effort. I drew inspiration from various real magazines to craft the headlines, incorporating embossing
+        and drop shadows to enhance the visual appeal. Additionally, I utilized the patch tool to cover my right
+        sleeve; where my skin was visible, I replaced it with purple shirt.  
+      </p>
+      <img src="magazine.png" alt="Magazine Cover">
     </div>
   </main>
+</html>

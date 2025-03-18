@@ -6,14 +6,11 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
 <link rel="stylesheet" href="navbar.css">
 <link rel="stylesheet" href="index.css">
-
+<script src="myscripts.js"></script>
 <title>Susan Lutz Homepage</title>
-
 </head>
 
-
-
-<!--Navbar-->
+<!--Navbar----------------------------------------------------------------------------------------------------------------->
 <ul>
     <li><a href="#home">Home</a></li>
     <li><a href="resume/resume.html">Resume</a></li>
@@ -40,22 +37,34 @@
       <a href="/typography/font-types.html">Typography Fonts</a>
       <a href="/typography/typography-comparison.html">Typography Comparison</a>
     </div>
+    <li class="dropdown">
+      <a href="#" class="dropbtn">Settings</a>
+    <div class="dropdown-content">
+      <!--<a href="onclick="myFunction()">Dark Mode / Light Mode</a>-->
+      <a href="#" onclick="darkMode();">Toggle Light / Dark Mode</a>  
+      <a href="#" onclick="changeSizeByBtn('50%');">Small Font</a>
+      <a href="#" onclick="changeSizeByBtn('60%');">Medium Font</a>
+      <a href="#" onclick="changeSizeByBtn('70%');">Large Font</a>
+    </div>
   </ul>
 
-  <!--main layout-->
- <main class="container">
-    <div class="box"><img style="display:block;margin:0 auto;" src="photo-of-me-1.png" alt="Photo of Me"><br></div>
-    <div class="box">
-      <h1>Welcome to My Site</h1>
-      <br>
-      <p>I am a USAF veteran, embarking on a journey of career transformation. In October 2024, I enrolled in
-       the Web Design Professional certificate program at Louisiana State University at Eunice via Web2Go. 
-       My goal is to complete the course within a year or less. As of February 2024, I am delighted to share that
-      I hold an "A" average in my studies.</p>
-      <br>
-      <p>Thus far, I have crafted several projects using Adobe Animate and Adobe Photoshop, and I am currently learning about
-      HTML and CSS. This website is designed to showcase my creations and my knowledge as I seek opportunities in 
-      web design and related fields. I sincerely hope you find your visit enjoyable! Should you have any questions 
-      or comments, please feel free to reach out to me at suelutz@gmail.com.</p>
-    </div>
-  </main>
+<!--Main Content---------------------------------------------------------------------------------------------------------------->
+  <body id="bodyID">
+    <main class="container">
+      <div class="box"><img style="display:block;margin:0 auto;" src="photo-of-me-1.png" alt="Photo of Me"><br></div>
+      <div class="box">
+        <h1 class= "fontSizeClass">Welcome to My Site</h1>
+        <br>
+        <p class="fontSizeClass">I am a USAF veteran, embarking on a journey of career transformation. In October 2024, I enrolled in the Web Design Professional certificate program at Louisiana State University at Eunice via Web2Go. 
+        My goal is to complete the course within a year or less. As of February 2024, I am delighted to share that
+        I hold an "A" average in my studies.</p>
+        <br>
+        <p class="fontSizeClass">Thus far, I have crafted several projects using Adobe Animate and Adobe Photoshop, and I am currently learning about
+        HTML and CSS. This website is designed to showcase my creations and my knowledge as I seek opportunities in 
+        web design and related fields. I sincerely hope you find your visit enjoyable! Should you have any questions 
+        or comments, please feel free to reach out to me at suelutz@gmail.com.</p>
+      </div>
+    </main>
+  </body>
+</html>
+

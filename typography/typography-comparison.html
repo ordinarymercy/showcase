@@ -6,12 +6,14 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
 <link rel="stylesheet" href="../navbar.css">
 <link rel="stylesheet" href="../index.css">
+<link rel="stylesheet" href="../style.css">
+<script defer src="../myscripts.js"></script>
 <title>Susan Lutz Font Comparison</title>
 </head>
 
 
 
-<!--Navbar-->
+<!--Navbar---------------------------------------------------------------------------------------------------------------->
 <ul class="nav">
   <li><a href="../index.html">Home</a></li>
   <li><a href="../resume/resume.html">Resume</a></li>
@@ -38,26 +40,39 @@
     <a href="font-types.html">Typography Fonts</a>
     <a href="typography-comparison.html">Typography Comparison</a>
   </div>
+  <li class="dropdown">
+    <a href="#" class="dropbtn">Settings</a>
+  <div class="dropdown-content">
+    <!--<a href="onclick="myFunction()">Dark Mode / Light Mode</a>-->
+    <a href="#" onclick="darkMode();">Toggle Light / Dark Mode</a>  
+    <a href="#" onclick="changeSizeByBtn('50%');">Small Font</a>
+    <a href="#" onclick="changeSizeByBtn('60%');">Medium Font</a>
+    <a href="#" onclick="changeSizeByBtn('70%');">Large Font</a>
+  </div>
 </ul>
 
-  <!--main layout-->
+<!--Upper Containers------------------------------------------------------------------------------------------------------------->
  <main class="container">
-    <div class="box"><img style="display:block;margin:0 auto;" src="../photo-of-me-1.png" alt="Photo of Me"><br></div>
-    <div class="box">
-      <h1>Comparing Typography Between 2 Websites</h1>
+    <div class="box"><img style="display:block;margin:0 auto;" src="../photo-of-me-1.png" alt="Photo of Me">
       <br>
-      <p>In this article, I will be demonstrating the importance of typography in web design by comparing two 
-        websites. One shows excellent use of typography (as well as other design elements), and the other is lacking 
-        in that area. The website with excellent typography is that for Muriel’s Restaurant in New Orleans. 
-        The website that could use a makeover is the 
-        <a href= "https://www.orleanscivildistrictcourt.org/first-city-court-clerk">New Orleans Small Claims Court Website</a>, 
-        and the website that has done a fantastic job is located at <a href="https://muriels.com/">
-            Muriel's Restaurant New Orleans.</a></p>
     </div>
     <div class="box">
-      <h3>Small Claims</h3>
+      <h5 class="fontSizeClass">Comparing Typography Between 2 Websites</h5>
+      <br>
+      <p class="fontSizeClass">In this article, I will be demonstrating the importance of typography in web design by comparing 
+          two websites. One shows excellent use of typography (as well as other design elements), and the other is lacking 
+          in that area. The website with excellent typography is that for Muriel’s Restaurant in New Orleans. 
+          The website that could use a makeover is the 
+          <a href= "https://www.orleanscivildistrictcourt.org/first-city-court-clerk">New Orleans Small Claims Court Website</a>, 
+          and the website that has done a fantastic job is located at <a href="https://muriels.com/">
+          Muriel's Restaurant New Orleans.</a></p>
+    </div>
+
+<!--Lower Container------------------------------------------------------------------------------------------------------------->
+    <div class="box">
+      <h3 class="fontSizeClass">Small Claims</h3>
       <p><img src="small-claims-home-page.png" alt="Small Claims Home Page"></p>
-      <p>The Small Claims website is lacking in many design elements, but for the purpose of this article, 
+      <p class="fontSizeClass">The Small Claims website is lacking in many design elements, but for the purpose of this article, 
         we will focus on its typography. When you first arrive at its site, you see the location, contact 
         information and hours in what appears to be Times New Roman or some similar typeface, centered on the screen. 
         The phone, the word “fax” and the title “OFFICE HOURS” are all in boldface, and I cannot fathom why. 
@@ -65,57 +80,60 @@
       <br>
       <hr>
 
-      <h3>Following is what you see when you scroll down the Small Claims page:</h3>
+      <h3 class="fontSizeClass">Following is what you see when you scroll down the Small Claims page:</h3>
       <p><img src="small-claims-second-page.png" alt="Small Claims Second Page"></p>
-      <p>As you scroll down, you will see the page shown below. Again, the fonts appear to be without any coherent 
-        design in mind. It continues to be in Times New Roman, only now there are some items in blue. Sometimes those 
+      <p class="fontSizeClass">As you scroll down, you will see the page shown below. Again, the fonts appear to be without any   
+        coherent design in mind. It continues to be in Times New Roman, only now there are some items in blue. Sometimes those 
         blue items are hyperlinks, as you would expect, and sometimes they are not. For example, “(The information 
         provided herein does not constitute legal advice. Each case is different. You should always consult an 
         attorney.)” is in blue but is NOT a hyperlink.</p>
       <br>
       <hr>
 
-      <h3>As you scroll down, you see more of the same: </h3>
+      <h3 class="fontSizeClass">As you scroll down, you see more of the same: </h3>
       <p><img src="small-claims-third-page.png" alt="Small Claims Third Page"></p>
       <p></p>
       <br>
       <hr>
 
-      <h3>Finally, you reach the Small Claims footer:</h3>
+      <h3 class="fontSizeClass">Finally, you reach the Small Claims footer:</h3>
       <p><img src="small-claims-footer.png" alt="Small Claims Footer"></p>
-      <p>Finally, you reach the footer, which only states the address of the court, again in Times New Roman. 
-        You might expect that a website devoted to legal matters would at least have a privacy policy listed in its 
+      <p class="fontSizeClass">Finally, you reach the footer, which only states the address of the court, again in Times New 
+        Roman.  You might expect that a website devoted to legal matters would at least have a privacy policy listed in its 
         footer, but that's not the case.</p>
       <br>
       <hr>
 
-      <h3>Muriel's Restaurant</h3>
+      <h3 class="fontSizeClass">Muriel's Restaurant</h3>
       <p><img src="muriels-home-page.png" alt="Muriels Home Page"></p>
-      <p>Now, let’s go to the landing page for Muriel’s Restaurant, which is located at www.muriels.com. 
+      <p class="fontSizeClass">Now, let’s go to the landing page for Muriel’s Restaurant, which is located at www.muriels.com. 
         You immediately see the eye-catching logo, and then your eye is drawn to the sophisticated sans serif 
         font in the navigation bar.</p>
       <br>
       <hr>
 
-      <h3>Our History</h3>
+      <h3 class="fontSizeClass">Our History</h3>
       <p><img src="muriels-our-history.png" alt="Muriels Our History Page"></p>
-      <p>If you visit “About” – “Our History”, you are brought to the site shown below. Notice the size of
+      <p class="fontSizeClass">If you visit “About” – “Our History”, you are brought to the site shown below. Notice the size of
          the title of the webpage “Our History” in a classic Serif font, followed by other smaller serif headings, 
          with the text of the paragraphs in easy-to-read Sans Serif.</p>
       <br>
       <hr>
 
-      <h3>Jackson Square</h3>
+      <h3 class="fontSizeClass">Jackson Square</h3>
         <p><img src="muriels-jackson-square.png" alt="Muriels Jackson Square Page"></p>
-        <p>This same typography theme is consistently shown throughout the website, with the title being
-             in that large serif font, followed by the smaller headings and sans serif paragraph text. For example, 
-             under "Private Events - Jackson Square Dinner," you see this page.</p>
+        <p class="fontSizeClass">This same typography theme is consistently shown throughout the website, with the title being
+          in that large serif font, followed by the smaller headings and sans serif paragraph text. For example, 
+          under "Private Events - Jackson Square Dinner," you see this page.</p>
         <br>
         <hr>
-<h3>Notice the consistency and how the entire website gives you a sense that this is a classy, upscale 
-    restaurant with gourmet food. I could gush about other aspects of this website, but that is beyond the
-     scope of this article. In any case, I will look to this site as an example of what I should aspire to be, 
-     as a web designer!</h3>
+
+      <h3 class="fontSizeClass">Notice the consistency and how the entire website gives you a sense that this is a classy,  
+        upscale restaurant with gourmet food. I could gush about other aspects of this website, but that is beyond the
+        scope of this article. In any case, I will look to this site as an example of what I should aspire to be, 
+        as a web designer!
+      </h3>
 
     </div>
   </main>
+  </html>

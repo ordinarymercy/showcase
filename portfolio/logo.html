@@ -6,12 +6,13 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
 <link rel="stylesheet" href="../navbar.css">
 <link rel="stylesheet" href="../style.css">
+<script defer src="../myscripts.js"></script>
 <title>Susan Lutz Logo Creation</title>
 </head>
 
 
 
-<!--Navbar-->
+<!--Navbar----------------------------------------------------------------------------------------------------------------->
 <ul class="nav">
   <li><a href="../index.html">Home</a></li>
   <li><a href="../resume/resume.html">Resume</a></li>
@@ -38,19 +39,28 @@
     <a href="../typography/font-types.html">Typography Fonts</a>
     <a href="../typography/typography-comparison.html">Typography Comparison</a>
   </div>
+  <li class="dropdown">
+    <a href="#" class="dropbtn">Settings</a>
+  <div class="dropdown-content">
+    <!--<a href="onclick="myFunction()">Dark Mode / Light Mode</a>-->
+    <a href="#" onclick="darkMode();">Toggle Light / Dark Mode</a>  
+    <a href="#" onclick="changeSizeByBtn('50%');">Small Font</a>
+    <a href="#" onclick="changeSizeByBtn('60%');">Medium Font</a>
+    <a href="#" onclick="changeSizeByBtn('70%');">Large Font</a>
+  </div>
 </ul>
 
-  <!--main layout-->
+ <!--Main Content---------------------------------------------------------------------------------------------------------------->
  <main class="container">
   <div class="box"><img style="display:block;margin:0 auto;" src="../photo-of-me-1.png" alt="Photo of Me"></div>
     <div class="box">
-      <h1>Photoshop - Logo Creation</h1>
+      <h5 class="fontSizeClass">Photoshop - Logo Creation</h5>
       <br>
-      <p>The purpose of this project is to create a branding package for "Bagel Bliss," a fictional company. 
-        This assignment offers an exciting opportunity to explore creative design and strategic thinking. At the heart
-         of this project is the logo, which serves as the visual cornerstone of the brand identity. Although not
+        <p class="fontSizeClass">The purpose of this project is to create a branding package for "Bagel Bliss," a fictional       
+          company.  This assignment offers an exciting opportunity to explore creative design and strategic thinking. At the heart
+          of this project is the logo, which serves as the visual cornerstone of the brand identity. Although not
           explicitly instructed to do so, I was careful to create a vector image that could maintain crisp lines and
-         clarity at any size, whether it's on a business card or a billboard.      
+          clarity at any size, whether it's on a business card or a billboard.      
         </p>
         <img src="logo.svg" alt="Logo">
     </div>

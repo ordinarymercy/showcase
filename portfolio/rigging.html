@@ -6,12 +6,11 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
 <link rel="stylesheet" href="../navbar.css">
 <link rel="stylesheet" href="../style.css">
+<script defer src="../myscripts.js"></script>
 <title>Susan Lutz Rigging Project</title>
 </head>
 
-
-
-<!--Navbar-->
+<!--Navbar------------------------------------------------------------------------------------------------------------>
 <ul class="nav">
   <li><a href="../index.html">Home</a></li>
   <li><a href="../resume/resume.html">Resume</a></li>
@@ -38,21 +37,30 @@
     <a href="../typography/font-types.html">Typography Fonts</a>
     <a href="../typography/typography-comparison.html">Typography Comparison</a>
   </div>
+  <li class="dropdown">
+    <a href="#" class="dropbtn">Settings</a>
+  <div class="dropdown-content">
+    <!--<a href="onclick="myFunction()">Dark Mode / Light Mode</a>-->
+    <a href="#" onclick="darkMode();">Toggle Light / Dark Mode</a>  
+    <a href="#" onclick="changeSizeByBtn('50%');">Small Font</a>
+    <a href="#" onclick="changeSizeByBtn('60%');">Medium Font</a>
+    <a href="#" onclick="changeSizeByBtn('70%');">Large Font</a>
+  </div>
 </ul>
 
-  <!--main layout-->
+<!--main layout------------------------------------------------------------------------------------------------------------>
  <main class="container">
   <div class="box"><img style="display:block;margin:0 auto;" src="../photo-of-me-1.png" alt="Photo of Me"></div>
     <div class="box">
-      <h1>Animate - Rigging Project</h1>
-      <br>
-      <p>Rigging in Adobe Animate employs the Bone Tool, enabling intricate and lifelike character movements. 
-        This technique uses a series of connected segments that mimic bones to represent and manage the motion of
-         objects or their components. The purpose of this project is to demonstrate a basic character performing an
+      <h5 class="fontSizeClass">Animate - Rigging Project</h5>
+        <br>
+          <p class="fontSizeClass">Rigging in Adobe Animate employs the Bone Tool, enabling intricate and lifelike character    movements. This technique uses a series of connected segments that mimic bones to represent and manage the motion of
+          objects or their components. The purpose of this project is to demonstrate a basic character performing an
           animation, in this case jumping jacks. As I do not possess a graphics drawing tablet, I was restricted to
-           designing a rather simplistic character. This animation serves as a straightforward introduction to 
-           character animation for beginners.        
-        </p>
+          designing a rather simplistic character. This animation serves as a straightforward introduction to 
+          character animation for beginners.        
+          </p>
         <img src="rigging.gif" alt="Rigging">
-    </div>
-  </main>
+  </div>
+</main>
+
